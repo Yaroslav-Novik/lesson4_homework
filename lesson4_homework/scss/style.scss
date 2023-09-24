@@ -87,11 +87,16 @@ p {
 	line-height: 30px;
 	font-weight: 550;
 	// .main__section
-	//!Звернення к усім тегам span, які знаходяться в классі section та мають перший рівень вкладенності у тег <p> //!
+	//!Звернення к усім тегам h3, які знаходяться в классі section на будь якому рівні//!
 	&__section {
-		p > span {
+		h3 {
 			font-size: 24px;
 			font-weight: 600;
+			text-align: center;
+		}
+		p {
+			text-indent: 20px;
+			margin-top: 15px;
 		}
 	}
 }
@@ -153,7 +158,9 @@ div[class|="declaration"] {
 .independence {
 }
 
-.independece-link {margin-bottom: 30px;}
+.independece-link {
+	margin-bottom: 30px;
+}
 .flex-independece {
 	display: flex;
 	flex-direction: column;
@@ -183,7 +190,9 @@ div[class|="declaration"] {
 }
 .footer {
 }
-.button {
+
+.link {
+	border: none;
 	border-radius: 50%;
 	background-color: rgba(39, 75, 221, 0.742);
 	display: flex;
@@ -192,10 +201,6 @@ div[class|="declaration"] {
 	height: 62px;
 	width: 60px;
 	margin-left: 900px;
-	border: none;
-}
-.link {
-	border: none;
 }
 a {
 }
@@ -215,9 +220,9 @@ a {
 	letter-spacing: 3.3px;
 	text-shadow: 2px 2px 4px #5c5858;
 	font-size: 35px;
-	margin: 30px 0 0;
 	line-height: 50px;
 	background: linear-gradient(to right, rgb(225, 240, 107), rgb(39, 75, 221));
+	margin: 30px -15px 0px -15px;
 }
 .siple-table {
 	background-color: rgb(192, 222, 163);
